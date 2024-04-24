@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Euclid-Regular";
+    src: url(../fonts/Euclid\ Circular\ A\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Euclid-Light";
+    src: url(../fonts/Euclid\ Circular\ A\ Light.ttf);
+}
+
+@font-face {
+    font-family: "Euclid-Bold";
+    src: url(../fonts/Euclid\ Circular\ A\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "New York";
+    src: url(../fonts/NewYork\ .otf);
+}
+
+/* accent color: #E8BF96 */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: #272422;
+    color: #fff;
+}
+
+h1, h2, h3, h4{
+    font-family: "New York";
+    font-weight: 400;
+}
+
+h1{
+    font-size: 12.5rem;
+}
+
+h2{
+    font-size: 6.25rem;
+}
+
+h3{
+    font-size: 3.75rem;
+}
+
+p{
+    font-family: "Euclid-Light";
+    font-size: 1rem;
+    color: #999;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Euclid-Regular";
+}
+
+.btn-main{
+    padding: 2em 2.5em;
+    border: 1px solid #3C3636;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+body{
+    width: 100vw;
+}
+
+header, footer, .video{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.hero, .works, .service, .blog, .contact{
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+    border: 3px solid red;
+}
