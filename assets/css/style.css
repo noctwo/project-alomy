@@ -83,11 +83,11 @@ a{
 }
 
 body{
-    width: 100vw;
+    width: 100%;
 }
 
 header, footer, .video{
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -137,8 +137,12 @@ nav{
 .hero{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 100px);
+    grid-template-rows: repeat(10, 100px);
     position: relative;
+}
+
+.open-lightbox {
+    grid-column: 6 / 8;
 }
 
 .hero-img-left{
@@ -179,33 +183,18 @@ nav{
 /* CLAIM */
 
 .claim{
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-}
-
-.claim h2{
-    margin-top: 68px;
-display: flex;
-justify-content: center;
-text-align: center;
-}
-
-.claim p{
-    text-align: center;
-}
-
-
-.claim-wrapper{
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 5em;
+    text-align: center;
+    padding: 10em 0;
+}
+
+.claim p, .claim h2{
+    width: 70%;
 }
 
 /* GRID GALLERY */
@@ -219,6 +208,7 @@ text-align: center;
     justify-content: space-between;
     align-items: center;
     gap: 3em;
+    margin-bottom: 5em;
 }
 
 .works-blog-text-flex p{
@@ -282,33 +272,48 @@ text-align: center;
 }
 
 /*  SERVICE aka EXPERTISE*/
+
+.section-top-bar-service{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #333337;
+    padding-bottom: 1em;
+}
+
 .expertise {
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     position: relative;
 }
 
+.expertise{
+    border-bottom: 1px solid #333337;
+}
+
 .expertise-column div{
-    margin-bottom: 10vh;
+    margin: 5em 0;
 }
 
 .expertise-column div h3:hover {
-    color: var(--golden);
+    color: #E8BF96;
+    cursor: pointer;
 }
 
 .img1, .img2, .img3, .img4 {
     background-size: cover;
     height: 50%;
-    width: 40%;
+    width: 30%;
     position: absolute;
     opacity: 0;
     bottom: 0;
-    left: -5vw;
+   
 }
 
 .img1 {
     background-image: url(../img/17.jpeg);
     background-size: cover;
+    opacity: 1;
 }
 .img2 {
     background-image: url(../img/20.jpeg);
@@ -326,16 +331,17 @@ text-align: center;
 
 .img5, .img6, .img7, .img8 {
     height: 50%;
-    width: 40%;
+    width: 30%;
     position: absolute;
     opacity: 0;
-    top:0;
-    right: -5vw;
+    top: 100px;
+    right: -0.1em;
 }
 
 .img5 {
     background-image: url(../img/16.jpeg);
     background-size: cover;
+    opacity: 1;
 }
 
 .img6 {
@@ -361,23 +367,25 @@ text-align: center;
 .blog{
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid #333337;
+    margin-bottom: 5em;
 }
 
 .blog-gallery{
     display: flex;
-    gap: 1em;
+    gap: 4em;
 }
 
 .blog-gallery-item{
-    width: 350px;
     display: flex;
     flex-direction: column;
-    width: 33%;
+    
 }
 
 .field-date{
-    margin-top: 30px;
+    margin: 2em 0 0.5em 0;
     color: #999999;
+    font-family: "Euclid-Regular";
 }
 
 
@@ -406,12 +414,7 @@ text-align: center;
 
 .video-caption-copy{
     color: #fff;
-}
-
-.contact{
-    height: 700px;
-
-
+    margin-left: 2em;
 }
 
 /* NOMINATED */
@@ -436,8 +439,6 @@ text-align: center;
 
 .section-top-bar{
     border-bottom: 1px solid #999;
-
-
 }
 
 .blubb{
@@ -445,6 +446,7 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     gap: 3em;
+    padding: 5em 0;
 }
 
 .blubb h2{
@@ -454,10 +456,9 @@ text-align: center;
 /* FOOTER */
 
 footer {
-    margin: 3%;
+    padding: 5em 3em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1.5fr 1.5fr;
-    height: 15vh;
 }
 
 footer img {
@@ -468,7 +469,7 @@ footer img {
 .footer-col {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1em;
 }
 
 .social-icon-wrapper {
@@ -487,9 +488,10 @@ footer img {
 }
 
 footer input[type=email]  {
-    border: 0;
-    border-bottom: solid white 0.1px;
+    border: none;
+    border-bottom: solid white 1px;
     background-color: transparent;
-    padding: 0.5em;
+    padding-bottom: 0.5em;
     color: #999;
+    width: 100%;
 }
