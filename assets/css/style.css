@@ -275,7 +275,7 @@ nav{
 
 .section-top-bar-service{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 3em;
     border-bottom: 1px solid #333337;
     padding-bottom: 1em;
@@ -295,15 +295,15 @@ nav{
     margin: 5em 0;
 }
 
-.expertise-column div h3:hover {
+.expertise-column div h2:hover {
     color: #E8BF96;
     cursor: pointer;
 }
 
 .img1, .img2, .img3, .img4 {
     background-size: cover;
-    height: 50%;
-    width: 30%;
+    height: 40%;
+    width: 25%;
     position: absolute;
     opacity: 0;
     bottom: 0;
@@ -330,8 +330,8 @@ nav{
 
 
 .img5, .img6, .img7, .img8 {
-    height: 50%;
-    width: 30%;
+    height: 40%;
+    width: 25%;
     position: absolute;
     opacity: 0;
     top: 100px;
